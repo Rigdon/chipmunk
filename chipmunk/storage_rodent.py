@@ -31,6 +31,8 @@ class _Chipmunk(object):
 
     def __nonzero__(self):
         return bool(self.__class__.__locals.__dict__)
+      
+    __bool__ = __nonzero__
 
     def __getattribute__(self, name):
         """
