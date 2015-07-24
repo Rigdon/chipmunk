@@ -1,1 +1,1 @@
-from storage_rodent import Chipmunk
+from .storage_rodent import Chipmunk
