@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
   name='chipmunk',
-  version='1.0.dev1',
+  version='1.0rc1',
   description='A very small and simple usage mechanism for Python threadlocals.',
   url='https://github.com/Rigdon/chipmunk',
   author='Rigdon',
