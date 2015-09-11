@@ -7,10 +7,10 @@ test_requirements = [
 
 setup(
     name='chipmunk',
-    version='1.0rc1',
+    version='1.0rc2',
     description='A very small and simple usage mechanism for Python threadlocals.',
     url='https://github.com/Rigdon/chipmunk',
-    download_url='https://github.com/Rigdon/chipmunk/tarball/1.0rc1',
+    download_url='https://github.com/Rigdon/chipmunk/tarball/1.0rc2',
     tests_require=test_requirements,
     test_suite="nose.collector",
     author='Rigdon',
