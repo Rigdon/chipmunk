@@ -61,7 +61,7 @@ class _Chipmunk(object):
     @classmethod
     def store_data(cls, name, data):
         """
-        Store the attribute in the thread local object if none witht he same name exist.
+        Store the attribute in the thread local object if none with the same name exists.
         """
         if hasattr(cls.__locals, name):
             raise AttributeError("Chipmunk can't store attribute \"%s\", it's already holding one." % name)
