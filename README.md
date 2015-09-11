@@ -3,7 +3,7 @@
 
 ##### A very small and simple usage mechanism for Python threadlocals.
 
-This is an abstraction on type of `threading.local` that attempts to simply usage a bit and combat some the common
+This is an abstraction on type of `threading.local` that attempts to simply usage a bit and combat the common
 problem of accidentally overwriting values that may have been added by other portions of code. It also implements the
 `in` operator to test for inclusion and the bool() method to test whether the Chipmunk is holding anything.
 
