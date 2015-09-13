@@ -29,10 +29,25 @@ classifiers=[
     'Programming Language :: Python :: 3.4',
 ]
 
+
+def get_rst_description():
+    desc = ""
+    try:
+        import pandoc
+        pandoc.core.PANDOC_PATH = "/usr/local/bin/pandoc"
+        with open("README.md") as readme:
+            doc = pandoc.Document()
+            doc.markdown = readme.read()
+        desc = doc.rst
+    except:
+        print("An error occurred while processing the description. Setup will continue without it.")
+    return desc
+
 setup(
     name='chipmunk',
-    version='1.0',
+    version='1.0.1',
     description='A very small and simple usage mechanism for Python threadlocals.',
+    long_description=get_rst_description(),
     url='https://github.com/Rigdon/chipmunk',
     download_url='https://github.com/Rigdon/chipmunk/tarball/1.0',
     tests_require=test_requirements,
@@ -42,5 +57,5 @@ setup(
     license='The Unlicense',
     packages=['chipmunk'],
     keywords=['utilities', 'locals', 'threading'],
-    classifiers=[]
+    classifiers=classifiers,
 )
